@@ -1,4 +1,18 @@
 # Hello World for PSI Numerical Methods 2026
+import numpy as np
+import matplotlib.pyplot as plt
+ 
+print("Hello PSI 2026!")
+print(np.exp(1.2))
+
+x = np.linspace(0,2*np.pi,100)
+
+plt.plot(x,np.sin(x), label = "sin(x)", color = 'green')
+plt.plot(x,np.cos(x), label = "cos(x)", color = 'blue')
+plt.legend()
+
+plt.savefig("trig.png")
+
 def myexp(x, N=10):
     """
     This function computes exp(x) via the Taylor Series using terms up to
